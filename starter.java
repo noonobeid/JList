@@ -1,10 +1,18 @@
 import java.util.Scanner;
 import java.time.LocalDate; // import the LocalDate class
 
-public class starter extends main
+public class starter
 {
     double Version = 1.0;
+    String Com1;
+    String Com2;
+    String Com3;
 
+
+    static void Lister()
+    {
+
+    }
 
     static void TimeTalker()
     {
@@ -15,14 +23,18 @@ public class starter extends main
 
     static void Updates()
     {
+        int max = 200;
         boolean ty = true;
         boolean kill = false;
         Scanner obj = new Scanner(System.in);
         System.out.println("          ");
         while (ty)
         {
-            String endless = obj.nextLine();
-            System.out.println(endless);
+            for (int i = 0; i < max; i++)
+            {
+              System.out.println("(" + i);
+              String endless = obj.nextLine();
+            }
         }
     }
 
